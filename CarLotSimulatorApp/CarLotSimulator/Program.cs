@@ -24,7 +24,7 @@ namespace CarLotSimulator
             myCar.MakeEngineNoise();
             Console.WriteLine();
 
-           //Using Dot
+           //Using Dot notation
             Car yourCar = new Car();
             yourCar.Year = 2011;
             yourCar.Make = "Chevy";
@@ -37,7 +37,7 @@ namespace CarLotSimulator
             yourCar.MakeEngineNoise();
             Console.WriteLine();
 
-            //Method 3 - Don't know if this method has a specific name
+            //Method 3 - Parameterized constructor
             Car theirCar = new Car(2023, "Ford", "Focus", "tweet tweet", "*raspberry*", false);
             //theirCar.DisplayCarInfo();  //Redundant - made for practice
             theirCar.MakeHonkNoise();

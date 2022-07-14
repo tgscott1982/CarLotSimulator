@@ -23,7 +23,7 @@ namespace CarLotSimulator
         {
             foreach (var car in CarList)
             {
-                Console.WriteLine($"Year: {car.Year}, Make: {car.Make}, Model: {car.Model}");
+                Console.WriteLine($"Year: {car.Year} \nMake: {car.Make} \nModel: {car.Model}\n");
             }
         }
 
