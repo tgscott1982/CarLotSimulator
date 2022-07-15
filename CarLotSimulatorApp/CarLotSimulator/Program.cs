@@ -8,6 +8,7 @@ namespace CarLotSimulator
         {
             //Bonus 2 - Instanciate the carlot class at the beginning of the program
             var onLot = new CarLot();
+            Console.WriteLine($"Number of cars on the lot : {CarLot.numberOfCars}\n\n");
 
             //TODO
             //Now that the Car class is created we can instanciate 3 new cars
@@ -22,9 +23,10 @@ namespace CarLotSimulator
             //myCar.DisplayCarInfo();  //Redundant - made for practice
             myCar.MakeHonkNoise();
             myCar.MakeEngineNoise();
+            Console.WriteLine($"Number of cars on the lot : {CarLot.numberOfCars}");
             Console.WriteLine();
 
-           //Using Dot notation
+            //Using Dot notation
             Car yourCar = new Car();
             yourCar.Year = 2011;
             yourCar.Make = "Chevy";
@@ -35,6 +37,7 @@ namespace CarLotSimulator
             //yourCar.DisplayCarInfo();  //Redundant - made for practice
             yourCar.MakeHonkNoise();
             yourCar.MakeEngineNoise();
+            Console.WriteLine($"Number of cars on the lot : {CarLot.numberOfCars}");
             Console.WriteLine();
 
             //Method 3 - Parameterized constructor
@@ -42,8 +45,8 @@ namespace CarLotSimulator
             //theirCar.DisplayCarInfo();  //Redundant - made for practice
             theirCar.MakeHonkNoise();
             theirCar.MakeEngineNoise();
+            Console.WriteLine($"Number of cars on the lot : {CarLot.numberOfCars}");
             Console.WriteLine();
-            
             //*************BONUS X 2*************//
             //At the end iterate through the list printing each of car's Year, Make, and Model to the console
 
@@ -52,6 +55,8 @@ namespace CarLotSimulator
             onLot.CarList.Add(theirCar);
 
             onLot.DisplayCarsList(); //Bonus 2 - Display the cars and basic info added to the new car list
+            Console.WriteLine($"\nFinal car lot count: {CarLot.numberOfCars}");
+
         }
     }
 }

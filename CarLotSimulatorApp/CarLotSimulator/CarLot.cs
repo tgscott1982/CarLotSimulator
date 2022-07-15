@@ -14,7 +14,7 @@ namespace CarLotSimulator
 
         public CarLot()
         {
-
+           
         }
 
         public List<Car> CarList = new List<Car>();
@@ -26,6 +26,8 @@ namespace CarLotSimulator
                 Console.WriteLine($"Year: {car.Year} \nMake: {car.Make} \nModel: {car.Model}\n");
             }
         }
+
+        public static int numberOfCars = 0;
 
     }
 }
